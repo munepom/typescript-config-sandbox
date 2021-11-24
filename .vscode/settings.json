@@ -1,0 +1,59 @@
+{
+  // 余計なスペース除去
+  "files.trimTrailingWhitespace": true,
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false
+  },
+
+  //ファイルブラウザから除外するフォルダ/ファイル
+  "files.exclude": {
+    "**/.git": false,
+    "**/.DS_Store": false,
+    "**/.bundle": false
+  },
+
+  // クラッシュレポートの送信オフは User config で有効となる
+  // @see https://code.visualstudio.com/docs/getstarted/telemetry
+  "telemetry.telemetryLevel": "off",
+
+  "editor.renderWhitespace": "all",
+  "editor.tabSize": 2,
+
+  // フォーマット設定
+  "editor.guides.bracketPairs": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.codeActionsOnSave": ["source.fixAll.eslint"],
+  // "eslint.format.enable": false, // true にすると、 eslint による format が機能してしまう
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+
+  // JavaScript のフォーマット実施
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // TypeScript のフォーマット実施
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // JSON with Comment のフォーマット実施
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "eslint.packageManager": "yarn",
+
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+
+  "breadcrumbs.enabled": true,
+
+  // おすすめの拡張機能を表示
+  "extensions.ignoreRecommendations": false,
+
+  // 検索対象から除外するファイル
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/*.code-search": true
+  }
+}

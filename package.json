@@ -1,0 +1,12 @@
+{
+  "name": "typescript-config-sandbox",
+  "repository": "git@github.com:munepom/typescript-config-sandbox.git",
+  "author": "munepom <munepom@users.noreply.github.com>",
+  "private": true,
+  "devDependencies": {
+    "eslint": "^8.3.0",
+    "eslint-config-prettier": "8.3.0",
+    "prettier": "2.4.1",
+    "typescript": "^4.5.2"
+  }
+}
